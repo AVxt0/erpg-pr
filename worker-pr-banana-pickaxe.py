@@ -4,11 +4,14 @@
 
 # makes 100 banana pickaxe in batches
 
+# to stop the script, hover mouse to top left corner of your screen
+
 import pyautogui as pag
 import time
 import random
 
 while True:
+    pag.FAILSAFE = True
     pag.write('rpg trade d 150')
     pag.enter('enter')
     time.sleep(random.randint(1,2))

@@ -6,11 +6,14 @@
 # sells mob drops too
 # read this before !!!!!!!!!
 
+# to stop the script, hover mouse to top left corner of your screen
+
 import pyautogui as pag
 import time
 import random
 
 while True:
+    pag.FAILSAFE = True
     pag.write('rpg dismantle epic fish all')
     pag.enter('enter')
     time.sleep(random.randint(1,2))

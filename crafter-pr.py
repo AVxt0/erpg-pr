@@ -4,11 +4,14 @@
 
 # crafts in batches of 1000 epic logs
 
+# to stop the script, hover mouse to top left corner of your screen
+
 import pyautogui as pag
 import time
 import random
 
 while True:
+    pag.FAILSAFE = True
     pag.write('rpg craft epic log 1000')
     pag.enter('enter')
     time.sleep(random.randint(1,2))
