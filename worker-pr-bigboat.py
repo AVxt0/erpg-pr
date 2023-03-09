@@ -7,6 +7,6 @@ import time
 import random
 
 while True:
-    pag.write('rpg transmute s')
+    pag.write('rpg bigboat')
     pag.enter('enter')
-    time.sleep(random.randint(1,2))
+    time.sleep(random.randint(5,5.5))
