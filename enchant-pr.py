@@ -10,6 +10,5 @@ import random
 
 while True:
     pag.FAILSAFE = True
-    pag.write('rpg transmute s')
-    pag.enter('enter')
+    pag.typewrite('rpg transmute s','enter')
     time.sleep(random.randint(1,2))

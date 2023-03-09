@@ -12,9 +12,7 @@ import random
 
 while True:
     pag.FAILSAFE = True
-    pag.write('rpg craft epic log 1000')
-    pag.enter('enter')
+    pag.typewrite('rpg craft epic log 1000','enter')
     time.sleep(random.randint(1,2))
-    pag.write('rpg dismantle epic log all')
-    pag.enter('enter')
+    pag.write('rpg dismantle epic log all','enter')
     time.sleep(random.randint(1,2))
