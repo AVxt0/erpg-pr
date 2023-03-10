@@ -14,5 +14,5 @@ while True:
     pag.FAILSAFE = True
     pag.typewrite('rpg craft epic log 1000','enter')
     time.sleep(random.randint(1,2))
-    pag.write('rpg dismantle epic log all','enter')
+    pag.typewrite('rpg dismantle epic log all','enter')
     time.sleep(random.randint(1,2))

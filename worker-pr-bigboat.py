@@ -11,5 +11,4 @@ import random
 while True:
     pag.FAILSAFE = True
     pag.typewrite('rpg bigboat', 'enter')
-    pag.enter('enter')
     time.sleep(random.randint(5,5.5))
