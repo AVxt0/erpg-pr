@@ -10,9 +10,15 @@ import pyautogui as pag
 import time
 import random
 
+pag.FAILSAFE = True
+
 while True:
-    pag.FAILSAFE = True
-    pag.typewrite('rpg craft epic log 1000','enter')
+    time.sleep(1.5)
+    pag.write('rpg craft epic log 1000')
+    pag.keyDown('enter')
+    pag.keyUp('enter')
     time.sleep(random.randint(1,2))
-    pag.typewrite('rpg dismantle epic log all','enter')
+    pag.write('rpg dismantle epic log all')
+    pag.keyDown('enter')
+    pag.keyUp('enter')
     time.sleep(random.randint(1,2))
