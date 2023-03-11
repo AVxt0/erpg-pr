@@ -59,6 +59,8 @@ pag.write('rpg dismantle epic log all')
 pag.keyDown('enter')
 pag.keyUp('enter')
 time.sleep(random.randint(1,2))
-pag.write('rpg sell wooden log all')
-pag.keyDown('enter')
-pag.keyUp('enter')
+
+while True:
+    pag.write('rpg sell wooden log 50k')
+    pag.keyDown('enter')
+    pag.keyUp('enter')
