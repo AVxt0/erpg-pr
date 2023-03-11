@@ -11,6 +11,7 @@ import random
 pag.FAILSAFE = True
 
 while True:
+    time.sleep(1.5)
     pag.write('rpg transmute s')
     pag.keyDown('enter')
     pag.keyUp('enter')
