@@ -10,17 +10,31 @@ import pyautogui as pag
 import time
 import random
 
+pag.FAILSAFE = True
+time.sleep(1.5)
+
 while True:
-    pag.FAILSAFE = True
-    pag.typewrite('rpg trade d 150','enter')
+    pag.write('rpg trade d 150')
+    pag.keyDown('enter')
+    pag.keyUp('enter')
     time.sleep(random.randint(1,2))
-    pag.typewrite('rpg craft banana 100','enter')
+    pag.write('rpg craft banana 100')
+    pag.keyDown('enter')
+    pag.keyUp('enter')
     time.sleep(random.randint(1,2))
-    pag.typewrite('rpg craft epic log 60000','enter')
+    pag.write('rpg craft epic log 60000')
+    pag.keyDown('enter')
+    pag.keyUp('enter')
     time.sleep(random.randint(1,2))
-    pag.typewrite('rpg craft super log 6000','enter')
+    pag.write('rpg craft super log 6000')
+    pag.keyDown('enter')
+    pag.keyUp('enter')
     time.sleep(random.randint(1,2))
-    pag.typewrite('rpg craft mega log 600','enter')
+    pag.write('rpg craft mega log 600')
+    pag.keyDown('enter')
+    pag.keyUp('enter')
     time.sleep(random.randint(1,2))
-    pag.typewrite('rpg cook banana pickaxe 100','enter')
+    pag.write('rpg cook banana pickaxe 100')
+    pag.keyDown('enter')
+    pag.keyUp('enter')
     time.sleep(random.randint(1,2))
