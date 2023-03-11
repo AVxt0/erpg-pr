@@ -11,9 +11,9 @@ import time
 import random
 
 pag.FAILSAFE = True
+time.sleep(1.5)
 
 while True:
-    time.sleep(1.5)
     pag.write('rpg craft epic log 1000')
     pag.keyDown('enter')
     pag.keyUp('enter')
