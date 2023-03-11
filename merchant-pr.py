@@ -13,8 +13,8 @@ import time
 import random
 
 pag.FAILSAFE = True
-
 time.sleep(1.5)
+
 pag.write('rpg dismantle epic fish all')
 pag.keyDown('enter')
 pag.keyUp('enter')
