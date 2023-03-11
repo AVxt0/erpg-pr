@@ -8,7 +8,10 @@ import pyautogui as pag
 import time
 import random
 
+pag.FAILSAFE = True
+
 while True:
-    pag.FAILSAFE = True
-    pag.typewrite('rpg transmute s','enter')
+    pag.write('rpg transmute s')
+    pag.keyDown('enter')
+    pag.keyUp('enter')
     time.sleep(random.randint(1,2))
