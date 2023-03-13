@@ -179,6 +179,10 @@ pag.write('rpg sell flasks all')
 pag.keyDown('enter')
 pag.keyUp('enter')
 time.sleep(random.randint(1,2))
+pag.write('rpg sell lottery ticket all')
+pag.keyDown('enter')
+pag.keyUp('enter')
+time.sleep(random.randint(1,2))
 
 while True:
     pag.write('rpg sell wooden log 50k')
