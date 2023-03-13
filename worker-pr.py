@@ -11,7 +11,9 @@ import time
 import random
 
 pag.FAILSAFE = True
-time.sleep(1.5)
+time.sleep(0.5)
+print('starting in 1 second')
+time.sleep(1)
 
 while True:
     pag.write('rpg trade d 150')
