@@ -19,4 +19,4 @@ while True:
     pag.write('rpg transmute s')
     pag.keyDown('enter')
     pag.keyUp('enter')
-    time.sleep(random.randint(1,2))
+    time.sleep(random.random(1,2))

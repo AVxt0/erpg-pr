@@ -21,25 +21,25 @@ def sell(item):
     pag.write(f'rpg sell {item} all')
     pag.keyDown('enter')
     pag.keyUp('enter')
-    time.sleep(random.randint(1,2))
+    time.sleep(random.random(1,2))
 
 def dismantle(item):
     pag.write(f'rpg dismantle {item} all')
     pag.keyDown('enter')
     pag.keyUp('enter')
-    time.sleep(random.randint(1,2))
+    time.sleep(random.random(1,2))
 
 def trade(value):
     pag.write(f'rpg trade {value} all')
     pag.keyDown('enter')
     pag.keyUp('enter')
-    time.sleep(random.randint(1,2))
+    time.sleep(random.random(1,2))
     
 def open_lb(lootbox):
     pag.write(f'rpg open {lootbox} all')
     pag.keyDown('enter')
     pag.keyUp('enter')
-    time.sleep(random.randint(1,2))
+    time.sleep(random.random(1,2))
 
 # opens lootboxes
 
