@@ -3,9 +3,6 @@
 # just try to not get into jail xdd
 
 # side note: dismantles everything in your inventory
-# sells mob drops too
-# wooden logs are sold in batches of 50k because more money lol
-# if you want to do it all at once, just stop the script once it finishes
 # sells all mod drops
 # read this before !!!!!!!!!
 
@@ -20,174 +17,85 @@ time.sleep(0.5)
 print('starting in 1 second')
 time.sleep(1)
 
-# opens lootboxes
-
-pag.write('rpg open g all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg open o all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2)) 
-pag.write('rpg open ed all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg open ep all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg open r all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg open u all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg open c all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-
-# mats
-
-pag.write('rpg dismantle epic fish all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg dismantle golden fish all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg dismantle trade a all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg dismantle banana all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg dismantle trade c all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg dismantle trade e all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg dismantle ultra log all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg dismantle hyper log all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg dismantle mega log all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg dismantle super log all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg dismantle epic log all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-
-# end game items
-
-pag.write('rpg sell ultimate log all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg sell super fish all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg sell watermelon all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-
-# mob drops
-
-pag.write('rpg sell wolf skin all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg sell zombie eye all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg sell unicorn horn all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg sell mermaid hair all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg sell chip all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg sell dragon scale all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-
-# farm items
-
-pag.write('rpg sell bread all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg sell carrot all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg sellpotato all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg sell seed all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg sell bread seed all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg sell carrot seed all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg sell potato seed all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-
-# misc items
-
-pag.write('rpg sell life potion all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg sell flasks all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-pag.write('rpg sell lottery ticket all')
-pag.keyDown('enter')
-pag.keyUp('enter')
-time.sleep(random.randint(1,2))
-
-while True:
-    pag.write('rpg sell wooden log 50k')
+def sell(item):
+    pag.write(f'rpg sell {item} all')
     pag.keyDown('enter')
     pag.keyUp('enter')
     time.sleep(random.randint(1,2))
+
+def dismantle(item):
+    pag.write(f'rpg dismantle {item} all')
+    pag.keyDown('enter')
+    pag.keyUp('enter')
+    time.sleep(random.randint(1,2))
+
+def trade(value):
+    pag.write(f'rpg trade {value} all')
+    pag.keyDown('enter')
+    pag.keyUp('enter')
+    time.sleep(random.randint(1,2))
+    
+def open_lb(lootbox):
+    pag.write(f'rpg open {lootbox} all')
+    pag.keyDown('enter')
+    pag.keyUp('enter')
+    time.sleep(random.randint(1,2))
+
+# opens lootboxes
+
+open_lb('g')
+open_lb('o')
+open_lb('ed')
+open_lb('ep')
+open_lb('r')
+open_lb('u')
+open_lb('c')
+
+# mats
+
+dismantle('epic fish')
+dismantle('golden fish')
+trade('a')
+
+dismantle('banana')
+trade('c')
+
+trade('e')
+
+dismantle('ultra log')
+dismantle ('hyper log')
+dismantle('mega log')
+dismantle('super log')
+dismantle('epic log')
+sell('wooden log')
+
+# end game items
+
+sell('ultimate log')
+sell('super fish')
+sell('watermelon')
+
+# mob drops
+
+sell('wolf skin')
+sell('zombie eye')
+sell('unicorn horn')
+sell('mermaid hair')
+sell('chip')
+sell('dragon scale')
+
+# farm items
+
+sell('bread')
+sell('carrot')
+sell('potato')
+sell('seed')
+sell('bread seed')
+sell('carrot seed')
+sell('potato seed')
+
+# misc items
+
+sell('life potion')
+sell('flasks')
+sell('lottery ticket')
