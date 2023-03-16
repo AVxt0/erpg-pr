@@ -6,7 +6,7 @@
 # sells mob drops too
 # wooden logs are sold in batches of 50k because more money lol
 # if you want to do it all at once, just stop the script once it finishes
-# selling mod drops
+# sells all mod drops
 # read this before !!!!!!!!!
 
 # to stop the script, hover mouse to top left corner of your screen
