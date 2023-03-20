@@ -1,3 +1,6 @@
+
+# side note: only the major trades
+
 import pyautogui as pag
 import time
 import random
