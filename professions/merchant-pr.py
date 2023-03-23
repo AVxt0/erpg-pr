@@ -14,7 +14,7 @@ import random
 
 pag.FAILSAFE = True
 time.sleep(0.5)
-print('starting in 1 second')
+pag.confirm('starting in 1 second')
 time.sleep(1)
 
 def sell(item):

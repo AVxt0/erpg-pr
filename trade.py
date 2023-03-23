@@ -6,9 +6,9 @@ import time
 import random
 
 pag.FAILSAFE = True
-area = int(input('What area are you in right now?  '))
+area = pag.prompt('What area are you in?')
 time.sleep(0.5)
-print('starting in 1 second')
+pag.confirm('Starting in 1 second')
 time.sleep(1)
 
 def dismantle(item):
