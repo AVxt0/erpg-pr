@@ -2,7 +2,7 @@
 # Be sure to keep an eye on ur discord every now and then
 # just try to not get into jail xdd
 
-# side note: dismantles everything in your inventory
+# side note: erpg.dismantles everything in your inventory
 # sells all mod drops
 # read this before !!!!!!!!!
 
@@ -11,91 +11,68 @@
 import pyautogui as pag
 import time
 import random
+import erpg
 
 pag.FAILSAFE = True
 time.sleep(0.5)
 pag.confirm('starting in 1 second')
 time.sleep(1)
 
-def sell(item):
-    pag.write(f'rpg sell {item} all')
-    pag.keyDown('enter')
-    pag.keyUp('enter')
-    time.sleep(random.randint(1,2))
-
-def dismantle(item):
-    pag.write(f'rpg dismantle {item} all')
-    pag.keyDown('enter')
-    pag.keyUp('enter')
-    time.sleep(random.randint(1,2))
-
-def trade(value):
-    pag.write(f'rpg trade {value} all')
-    pag.keyDown('enter')
-    pag.keyUp('enter')
-    time.sleep(random.randint(1,2))
-    
-def open_lb(lootbox):
-    pag.write(f'rpg open {lootbox} all')
-    pag.keyDown('enter')
-    pag.keyUp('enter')
-    time.sleep(random.randint(1,2))
-
 # opens lootboxes
 
-open_lb('g')
-open_lb('o')
-open_lb('ed')
-open_lb('ep')
-open_lb('r')
-open_lb('u')
-open_lb('c')
+erpg.open_lb('g')
+erpg.open_lb('o')
+erpg.open_lb('ed')
+erpg.open_lb('ep')
+erpg.open_lb('r')
+erpg.open_lb('u')
+erpg.open_lb('c')
 
 # mats
 
-dismantle('epic fish')
-dismantle('golden fish')
-trade('a')
+erpg.dismantle('epic fish','all')
+erpg.dismantle('golden fish','all')
+erpg.trade('a','all')
 
-dismantle('banana')
-trade('c')
+erpg.dismantle('banana','all')
+erpg.trade('c','all')
 
-trade('e')
+erpg.trade('e')
 
-dismantle('ultra log')
-dismantle ('hyper log')
-dismantle('mega log')
-dismantle('super log')
-dismantle('epic log')
-sell('wooden log')
+erpg.dismantle('ultra log','all')
+erpg.dismantle ('hyper log','all')
+erpg.dismantle('mega log','all')
+erpg.dismantle('super log','all')
+erpg.dismantle('epic log','all')
+erpg.sell('wooden log','all')
 
 # end game items
 
-sell('ultimate log')
-sell('super fish')
-sell('watermelon')
+erpg.sell('ultimate log','all')
+erpg.sell('super fish','all')
+erpg.sell('watermelon','all')
 
 # mob drops
 
-sell('wolf skin')
-sell('zombie eye')
-sell('unicorn horn')
-sell('mermaid hair')
-sell('chip')
-sell('dragon scale')
+erpg.sell('wolf skin','all')
+erpg.sell('zombie eye','all')
+erpg.sell('unicorn horn','all')
+erpg.sell('mermaid hair','all')
+erpg.sell('chip','all')
+erpg.sell('dragon scale','all')
 
 # farm items
 
-sell('bread')
-sell('carrot')
-sell('potato')
-sell('seed')
-sell('bread seed')
-sell('carrot seed')
-sell('potato seed')
+erpg.sell('bread','all')
+erpg.sell('carrot','all')
+erpg.sell('potato','all')
+erpg.sell('seed','all')
+erpg.sell('bread seed','all')
+erpg.sell('carrot seed','all')
+erpg.sell('potato seed','all')
 
 # misc items
 
-sell('life potion')
-sell('flasks')
-sell('lottery ticket')
+erpg.sell('life potion','all')
+erpg.sell('flasks','all')
+erpg.sell('lottery ticket','all')

@@ -9,6 +9,7 @@
 import pyautogui as pag
 import time
 import random
+import erpg
 
 pag.FAILSAFE = True
 time.sleep(0.5)
@@ -16,11 +17,5 @@ pag.confirm('starting in 1 second')
 time.sleep(1)
 
 while True:
-    pag.write('rpg craft epic log 1000')
-    pag.keyDown('enter')
-    pag.keyUp('enter')
-    time.sleep(random.randint(1,2))
-    pag.write('rpg dismantle epic log all')
-    pag.keyDown('enter')
-    pag.keyUp('enter')
-    time.sleep(random.randint(1,2))
+    erpg.craft('epic log','1000')
+    erpg.dismantle('epic log','all')

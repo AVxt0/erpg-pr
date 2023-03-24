@@ -9,6 +9,7 @@
 import pyautogui as pag
 import time
 import random
+import erpg
 
 pag.FAILSAFE = True
 time.sleep(0.5)
@@ -16,27 +17,9 @@ pag.confirm('starting in 1 second')
 time.sleep(1)
 
 while True:
-    pag.write('rpg trade d 150')
-    pag.keyDown('enter')
-    pag.keyUp('enter')
-    time.sleep(random.randint(1,2))
-    pag.write('rpg craft banana 100')
-    pag.keyDown('enter')
-    pag.keyUp('enter')
-    time.sleep(random.randint(1,2))
-    pag.write('rpg craft epic log 60000')
-    pag.keyDown('enter')
-    pag.keyUp('enter')
-    time.sleep(random.randint(1,2))
-    pag.write('rpg craft super log 6000')
-    pag.keyDown('enter')
-    pag.keyUp('enter')
-    time.sleep(random.randint(1,2))
-    pag.write('rpg craft mega log 600')
-    pag.keyDown('enter')
-    pag.keyUp('enter')
-    time.sleep(random.randint(1,2))
-    pag.write('rpg cook banana pickaxe 100')
-    pag.keyDown('enter')
-    pag.keyUp('enter')
-    time.sleep(random.randint(1,2))
+    erpg.trade('d','150')
+    erpg.craft('banana','100')
+    erpg.craft('epic log','60000')
+    erpg.craft('super log','6000')
+    erpg.craft('mega log','600')
+    erpg.cook('banana pickaxe','100')
