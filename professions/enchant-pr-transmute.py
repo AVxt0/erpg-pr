@@ -12,7 +12,7 @@ import random
 
 pag.FAILSAFE = True
 time.sleep(0.5)
-pag.confirm('starting in 1 second')
+pag.confirm('starting in 1 second','enchant-pr-transmute.py')
 time.sleep(1)
 
 while True:
