@@ -16,7 +16,7 @@ pag.confirm('starting in 1 second')
 time.sleep(1)
 
 while True:
-    pag.write('rpg transmute s')
+    pag.write('rpg transmute a')
     pag.keyDown('enter')
     pag.keyUp('enter')
     time.sleep(random.randint(1,2))
