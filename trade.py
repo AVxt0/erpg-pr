@@ -4,6 +4,7 @@
 import pyautogui as pag
 import time
 import random
+import erpg
 
 pag.FAILSAFE = True
 area = pag.prompt('What area are you in?')
@@ -11,108 +12,93 @@ time.sleep(0.5)
 pag.confirm('Starting in 1 second')
 time.sleep(1)
 
-def dismantle(item):
-    pag.write(f'rpg dismantle {item} all')
-    pag.keyDown('enter')
-    pag.keyUp('enter')
-    time.sleep(random.randint(1,2))
-
-def trade(value):
-    pag.write(f'rpg trade {value} all')
-    pag.keyDown('enter')
-    pag.keyUp('enter')
-    time.sleep(random.randint(1,2))
-
-def open_lb(lootbox):
-    pag.write(f'rpg open {lootbox} all')
-    pag.keyDown('enter')
-    pag.keyUp('enter')
-    time.sleep(random.randint(1,2))
-
 def area_3():
-    dismantle('epic fish')
-    dismantle('golden fish')
+    erpg.dismantle('epic fish')
+    erpg.dismantle('golden fish')
 
-    dismantle('banana')
-    trade('c')
+    erpg.dismantle('banana')
+    erpg.trade('c')
 
-    dismantle('ultra log')
-    dismantle ('hyper log')
-    dismantle('mega log')
-    dismantle('super log')
-    dismantle('epic log')
-    trade('b')
+    erpg.dismantle('ultra log')
+    erpg.dismantle ('hyper log')
+    erpg.dismantle('mega log')
+    erpg.dismantle('super log')
+    erpg.dismantle('epic log')
+    erpg.trade('b')
 
 def area_5():
-    dismantle('epic fish')
-    dismantle('golden fish')
-    trade('a')
+    erpg.dismantle('epic fish')
+    erpg.dismantle('golden fish')
+    erpg.trade('a')
 
-    dismantle('banana')
+    erpg.dismantle('banana')
 
-    trade('e')
+    erpg.trade('e')
 
-    dismantle('ultra log')
-    dismantle ('hyper log')
-    dismantle('mega log')
-    dismantle('super log')
-    dismantle('epic log')
-    trade('d')
+    erpg.dismantle('ultra log')
+    erpg.dismantle ('hyper log')
+    erpg.dismantle('mega log')
+    erpg.dismantle('super log')
+    erpg.dismantle('epic log')
+    erpg.trade('d')
 
 def area_7():
-    dismantle('epic fish')
-    dismantle('golden fish')
-    trade('a')
+    erpg.dismantle('epic fish')
+    erpg.dismantle('golden fish')
+    erpg.trade('a')
 
-    dismantle('banana')
-    trade('c')
+    erpg.dismantle('banana')
+    erpg.trade('c')
 
-    trade('e')
+    erpg.trade('e')
 
-    dismantle('ultra log')
-    dismantle ('hyper log')
-    dismantle('mega log')
-    dismantle('super log')
-    dismantle('epic log')
+    erpg.dismantle('ultra log')
+    erpg.dismantle ('hyper log')
+    erpg.dismantle('mega log')
+    erpg.dismantle('super log')
+    erpg.dismantle('epic log')
 
 def area_9():
-    dismantle('epic fish')
-    dismantle('golden fish')
+    erpg.dismantle('epic fish')
+    erpg.dismantle('golden fish')
 
-    dismantle('banana')
-    trade('c')
+    erpg.dismantle('banana')
+    erpg.trade('c')
 
-    trade('e')
+    erpg.trade('e')
 
-    dismantle('ultra log')
-    dismantle ('hyper log')
-    dismantle('mega log')
-    dismantle('super log')
-    dismantle('epic log')
-    trade('b')
+    erpg.dismantle('ultra log')
+    erpg.dismantle ('hyper log')
+    erpg.dismantle('mega log')
+    erpg.dismantle('super log')
+    erpg.dismantle('epic log')
+    erpg.trade('b')
 
 def area_10():
-    dismantle('epic fish')
-    dismantle('golden fish')
-    trade('a')
+    erpg.dismantle('epic fish')
+    erpg.dismantle('golden fish')
+    erpg.trade('a')
 
-open_lb('g')
-open_lb('o')
-open_lb('ed')
-open_lb('ep')
-open_lb('r')
-open_lb('u')
-open_lb('c')
+erpg.open_lb('g')
+erpg.open_lb('o')
+erpg.open_lb('ep')
+erpg.open_lb('r')
+erpg.open_lb('u')
+erpg.open_lb('c')
 
 if area == 3:
     area_3()
 elif area == 5 or area == 8:
+    erpg.open_lb('ed')
     area_5()
 elif area == 7:
+    erpg.open_lb('ed')
     area_7()
 elif area == 9:
+    erpg.open_lb('ed')
     area_9()
 elif area == 10:
+    erpg.open_lb('ed')
     area_10()
 else:
     print('invalid input')
