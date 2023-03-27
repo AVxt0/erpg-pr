@@ -15,7 +15,7 @@ import erpg
 
 pag.FAILSAFE = True
 time.sleep(0.5)
-pag.confirm('starting in 1 second')
+pag.confirm('starting in 1 second','merchant-pr.py')
 time.sleep(1)
 
 # opens lootboxes
@@ -37,7 +37,7 @@ erpg.trade('a','all')
 erpg.dismantle('banana','all')
 erpg.trade('c','all')
 
-erpg.trade('e')
+erpg.trade('e','all')
 
 erpg.dismantle('ultra log','all')
 erpg.dismantle ('hyper log','all')
@@ -74,5 +74,5 @@ erpg.sell('potato seed','all')
 # misc items
 
 erpg.sell('life potion','all')
-erpg.sell('flasks','all')
+erpg.sell('flask','all')
 erpg.sell('lottery ticket','all')
