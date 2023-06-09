@@ -31,7 +31,7 @@ while True:
             a10wood = apple * 2.25
             print(f'A10 wood: {a10wood}')
         elif area == 9:
-            fish = int(input(Fish:  ))
+            fish = int(input('Fish:  '))
             a10wood = fish * 1.5
             print(f'A10 wood: {a10wood}')
         else: 
@@ -40,8 +40,13 @@ while True:
             time.sleep(1)
             break
     elif calc_type == '2':
+        
+    else:
+        print('Invalid Input')
+        print('Exiting Program')
+        time.sleep(1)
+        break
 
-    
     print('')
     restart = input('Continue? (y/n):  ')
     if restart.lower() == 'n' or 'no':
